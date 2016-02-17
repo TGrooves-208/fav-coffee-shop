@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="favorite_place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,200 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boise" translatesAutoresizingMaskIntoConstraints="NO" id="eGS-h4-beU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="5s1-ge-xoX">
+                                <rect key="frame" x="20" y="6" width="242" height="329"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Wp-K1-dNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roasted Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSw-Pc-ZSU">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locally Owned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7E-hb-doN">
+                                                <rect key="frame" x="0.0" y="21" width="120" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-6a-1Nd">
+                                                <rect key="frame" x="0.0" y="41" width="120" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DCl-C0-pf3">
+                                        <rect key="frame" x="0.0" y="142" width="242" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dawsons Taylor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-La-UYG">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="39"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Roasters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-1N-S2q">
+                                                <rect key="frame" x="0.0" y="39" width="216" height="34"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SzK-Ar-pZr">
+                                        <rect key="frame" x="0.0" y="294" width="91" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-RV-70D">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idaho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-ZJ-2w9">
+                                                <rect key="frame" x="45" y="0.0" width="46" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkB-Qu-sWk">
+                                <rect key="frame" x="233" y="550" width="134" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Up4-LV-egj"/>
+                                    <constraint firstAttribute="width" constant="134" id="t9V-gy-KE1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Find Out More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bIU-Kp-9BD" kind="show" id="J04-eF-yYQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eGS-h4-beU" secondAttribute="bottom" id="0sW-le-BGe"/>
+                            <constraint firstItem="KkB-Qu-sWk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9TZ-XU-3Kg"/>
+                            <constraint firstItem="eGS-h4-beU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EL3-IV-ZMq"/>
+                            <constraint firstItem="5s1-ge-xoX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="6" id="Gxo-T3-T7V"/>
+                            <constraint firstItem="5s1-ge-xoX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KZQ-1H-aid"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KkB-Qu-sWk" secondAttribute="bottom" constant="20" id="Yld-V3-ozE"/>
+                            <constraint firstAttribute="trailing" secondItem="eGS-h4-beU" secondAttribute="trailing" id="xA0-4u-Dhx"/>
+                            <constraint firstItem="eGS-h4-beU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yGP-PZ-bJk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreButton" destination="KkB-Qu-sWk" id="dRt-HC-nxo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-90" y="281"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="f43-ia-McJ">
+            <objects>
+                <viewController id="bIU-Kp-9BD" customClass="DetailVC" customModule="favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TRj-k8-uu9"/>
+                        <viewControllerLayoutGuide type="bottom" id="drF-xW-fd5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jef-Qb-9aY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dawsons" translatesAutoresizingMaskIntoConstraints="NO" id="XWb-wL-hBq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="aOQ-zo-LBL"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="rtq-sP-EIl">
+                                <rect key="frame" x="20" y="171" width="560" height="409"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="z3f-VF-wLd">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="409"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKP-gk-how">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="137"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="t69-1a-Rwa"/>
+                                                    <constraint firstAttribute="width" constant="227" id="zD5-s3-m16"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="zD5-s3-m16"/>
+                                                        <exclude reference="t69-1a-Rwa"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="291-AT-oKy">
+                                                <rect key="frame" x="0.0" y="137" width="560" height="272"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="227" id="2t1-AL-ChG"/>
+                                                    <constraint firstAttribute="height" constant="21" id="uhd-rU-GCT"/>
+                                                </constraints>
+                                                <mutableString key="text">October of 1995, we began Dawson Taylor Coffee Roasters in response to the need for a local roaster of exceptional quality coffees. Dawson Taylor Coffee Roasters is named after our son, Dawson Taylor Ledgard.
+
+We have been sourcing, buying, roasting and blending specialty coffees for over 15 years. We utilize traditional European-style drum roasters, and strongly believe this hands-on method ensures that our coffees are crafted to perfection, resulting in maximum flavor. We roast our coffees daily and deliver or ship it within 24 hours.
+</mutableString>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="2t1-AL-ChG"/>
+                                                        <exclude reference="uhd-rU-GCT"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4F-QT-dBo">
+                                <rect key="frame" x="20" y="0.0" width="57" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="bIU-Kp-9BD" eventType="touchUpInside" id="4Ac-cr-ylp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rtq-sP-EIl" firstAttribute="top" secondItem="XWb-wL-hBq" secondAttribute="bottom" constant="19" id="6P8-Kw-qRW"/>
+                            <constraint firstItem="XWb-wL-hBq" firstAttribute="leading" secondItem="jef-Qb-9aY" secondAttribute="leading" id="7wA-Ha-Og3"/>
+                            <constraint firstItem="XWb-wL-hBq" firstAttribute="top" secondItem="jef-Qb-9aY" secondAttribute="top" id="GFP-th-hdl"/>
+                            <constraint firstAttribute="trailing" secondItem="XWb-wL-hBq" secondAttribute="trailing" id="M2G-Om-jey"/>
+                            <constraint firstItem="rtq-sP-EIl" firstAttribute="leading" secondItem="jef-Qb-9aY" secondAttribute="leadingMargin" id="Sqe-Mq-k3U"/>
+                            <constraint firstItem="drF-xW-fd5" firstAttribute="top" secondItem="rtq-sP-EIl" secondAttribute="bottom" constant="20" id="T9Y-dj-E5J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rtq-sP-EIl" secondAttribute="trailing" id="pFX-nl-Mna"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYV-GF-Chu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="281"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="boise" width="1600" height="1067"/>
+        <image name="compass" width="35" height="35"/>
+        <image name="dawsons" width="1021" height="680"/>
+    </resources>
 </document>
